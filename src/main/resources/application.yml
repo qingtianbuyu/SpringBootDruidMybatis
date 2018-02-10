@@ -1,0 +1,32 @@
+server:
+  port: 9001
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+
+#Jackson配置
+  jackson:
+    default-property-inclusion: non_empty #non_null
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+  #字符编码配置
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+  profiles:
+    active: dev
+
+
+mybatis:
+  mapperLocations: classpath*:mappers/*.xml
+  typeAliasesPackage: com.yking.sp.mapper
+
+
+logging:
+  level: debug
+
+
+

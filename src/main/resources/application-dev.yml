@@ -1,0 +1,7 @@
+spring:
+  datasource:
+     url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=test
+     username: sa
+     password: <YourStrong!Passw0rd>
+     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+     type: com.alibaba.druid.pool.DruidDataSource
